@@ -1,48 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Company Landing Page</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="firstScreen">
-            <section class="homeScreen">
-                <div class="headerWrapper">
-                    <div class="navBarWrapper">
-                        <nav id="home">
-                            <ul>
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">Наши проекты</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Новости</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="firstScreenContent">
-                    <div class="firstScreenHeader">
-                        <h5>Передовая IT студия</h5>
-                    </div>
-                    <div class="firstScreenInfo">
-                        <h1>Мы создаем легкие решения сложных задач и проблем</h1>
-                    </div>
-                    <div class="firstScreenButton">
-                        <button class="projectsButton">Наши проекты</button>
-                    </div>
-                </div>
-            </section>
-            <section class="services">
-                <div class="servicesContainer">
-                    <h2>Мы создаем мобильные приложения \n
-                        для крупных корпораций</h2>
-                </div>
-                
-            </section>
-        </div>
-        
+  <header class="header">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Наши проекты</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Услуги</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Новости</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__content">
+      <h1 class="header__title">Передовая IT студия</h1>
+      <p class="header__description">Мы создаем легкие решения<br>сложных задач и проблем</p>
+      <button class="header__button">Наши проекты</button>
     </div>
+  </header>
+
+  <section class="services">
+    <div class="services__content">
+      <h2 class="services__title">Мы создаем мобильные приложения<br>для крупных корпораций</h2>
+      <p class="services__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+    </div>
+    <div class="services__icons">
+      <div class="services__icon">
+        <img src="icon.png" alt="Услуга 1">
+        <p class="services__icon-caption">Создание сайтов</p>
+        <p class="services__icon-text">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+      </div>
+      <div class="services__icon">
+        <img src="icon.png" alt="Услуга 2">
+        <p class="services__icon-caption">Создание сайтов</p>
+        <p class="services__icon-text">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+      </div>
+      <div class="services__icon">
+        <img src="icon.png" alt="Услуга 3">
+        <p class="services__icon-caption">Создание сайтов</p>
+        <p class="services__icon-text">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+      </div>
+    </div>
+    <button class="services__button">Все услуги</button>
+  </section>
+
+  <section class="development-standards">
+    <div class="development-standards__content">
+      <div class="development-standards__info-container">
+        <p class="development-standards__header">Высокие стандарты разработки</p>
+        <p class="development-standards__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.  стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+        <a href="#" class="development-standards__link">Подробнее о компании</a>
+        
+      </div>
+      <img src="image.png" alt="Стандарты разработки">
+
+      <hr class="development-standards__separator">
+      <div class="development-standards__metrics">
+        <div class="development-standards__metric">
+          <img src="metric.png" alt="Метрика 1">
+          <p class="development-standards__metric-value">125</p>
+          <p class="development-standards__metric-caption">Our projects</p>
+        </div>
+        <div class="development-standards__metric">
+          <img src="metric.png" alt="Метрика 2">
+          <p class="development-standards__metric-value">125</p>
+          <p class="development-standards__metric-caption">Our projects</p>
+        </div>
+        <div class="development-standards__metric">
+          <img src="metric.png" alt="Метрика 3">
+          <p class="development-standards__metric-value">125</p>
+          <p class="development-standards__metric-caption">Our projects</p>
+        </div>
+        <div class="development-standards__metric">
+          <img src="metric.png" alt="Метрика 4">
+          <p class="development-standards__metric-value">125</p>
+          <p class="development-standards__metric-caption">Our projects</p>
+        </div>
+        <div class="development-standards__metric">
+          <img src="metric.png" alt="Метрика 5">
+          <p class="development-standards__metric-value">125</p>
+          <p class="development-standards__metric-caption">Our projects</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-works">
+    <h2 class="our-works__title">Наши работы, на которых<br>мы специализируемся</h2>
+    <button class="our-works__button">Посмотреть все работы</button>
+    <div class="our-works__gallery">
+      <div class="our-works__item">
+        <img src="work.png" alt="Проект 1">
+        <p class="our-works__item-marker">01</p>
+        <p class="our-works__item-caption">Исследование и упаковка</p>
+      </div>
+      <div class="our-works__item">
+        <img src="work.png" alt="Проект 2">
+        <p class="our-works__item-marker">01</p>
+        <p class="our-works__item-caption">Исследование и упаковка</p>
+      </div>
+      <div class="our-works__item">
+        <img src="work.png" alt="Проект 3">
+        <p class="our-works__item-marker">01</p>
+        <p class="our-works__item-caption">Исследование и упаковка</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-projects">
+    <h2 class="our-projects__title">Наши проекты</h2>
+    <p class="our-projects__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+    <div class="our-projects__gallery">
+      <div class="our-projects__item">
+        <img src="project.png" alt="Проект 1">
+        <p class="our-projects__item-caption">Проект 1</p>
+      </div>
+      <div class="our-projects__item">
+        <img src="project.png" alt="Проект 2">
+        <p class="our-projects__item-caption">Проект 2</p>
+      </div>
+      <div class="our-projects__item">
+        <img src="project.png" alt="Проект 3">
+        <p class="our-projects__item-caption">Проект 3</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <h2 class="video__title">Видео о нашей работе</h2>
+    <div class="video__content">
+      <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+    <p class="subscribe__description">Полезные статьи, акции, новости - получите все это сейчас!</p>
+    <form class="subscribe__form">
+      <input type="email" name="email" placeholder="Введите ваш email" required>
+      <button type="submit" class="subscribe__button">Подписаться</button>
+    </form>
+    <p class="subscribe__disclaimer">Мы не шлем спам, и передаем никому ваши данные.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__column">
+      <h3 class="footer__column-title">Раздел 1</h3>
+      <p class="footer__column-item">Ссылка 1</p>
+      <p class="footer__column-item">Ссылка 2</p>
+      <p class="footer__column-item">Ссылка 3</p>
+    </div>
+    <div class="footer__column">
+      <h3 class="footer__column-title">Раздел 2</h3>
+      <p class="footer__column-item">Ссылка 4</p>
+      <p class="footer__column-item">Ссылка 5</p>
+      <p class="footer__column-item">Ссылка 6</p>
+    </div>
+    <div class="footer__column">
+      <h3 class="footer__column-title">Раздел 3</h3>
+      <p class="footer__column-item">Ссылка 7</p>
+      <p class="footer__column-item">Ссылка 8</p>
+      <p class="footer__column-item">Ссылка 9</p>
+    </div>
+    <div class="footer__column">
+      <h3 class="footer__column-title">Раздел 4</h3>
+      <p class="footer__column-item">Ссылка 10</p>
+      <p class="footer__column-item">Ссылка 11</p>
+      <p class="footer__column-item">Ссылка 12</p>
+    </div>
+    <p class="footer__copyright">(с) 2019. Все права защищены.</p>    
+  </footer>
+
+
 </body>
 </html>
