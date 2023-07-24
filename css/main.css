@@ -341,19 +341,53 @@ body {
   }
   
   .our-works {
-    padding: 50px 0;
-    text-align: center;
+    padding: 0;
+
+  }
+
+  .our-works__background {
+    background: linear-gradient(90deg, #504DC2 0%, #5F12D0 100%), #C4C4C4;
+    position: absolute;
+    height: 490px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
   }
   
+  .our-works__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+
+  .our-works__container {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    width: 1110px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .our-works__title {
-    font-size: 32px;
-    margin: 0;
-    padding: 10px 0;
+    color: #FFF;
+    z-index: 1;
+    /* h2 */
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 146.28%; /* 52.661px */
   }
   
   .our-works__button {
     padding: 10px 20px;
-    margin-top: 20px;
     cursor: pointer;
     border-radius: 30px;
     height: 45px;
@@ -362,6 +396,14 @@ body {
     border: none;
     color: #FFF;
     font-family: Montserrat;
+    z-index: 1;
+  }
+
+  .our-works__image {
+    border-radius: 10px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat, #C4C4C4;
+    width: 350px;
+    height: 300px;
   }
   
   .our-works__gallery {
@@ -371,20 +413,23 @@ body {
   }
   
   .our-works__item {
-    margin: 0 15px;
-    display: flex;
+    margin: 0;
+
+  }
+
+  /* .our-works__wrapper {
+    display: flex; 
     flex-direction: column;
     align-items: center;
-  }
+  } */
   
-  .our-works__item img {
-    width: 200px;
-    height: 200px;
+  .our-works__item-marker {
+    margin: 0;
   }
-  
+
   .our-works__item-caption {
     font-size: 16px;
-    margin-top: 10px;
+    margin: 0px;
   }
   
   .our-projects {
@@ -459,18 +504,19 @@ body {
   .subscribe__form {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+
+    height: 45px; 
   }
   
   .subscribe__form input {
     padding: 10px;
+
   }
   
   .subscribe__button {
     padding: 10px 20px;
-    margin-top: 20px;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 0 10px 10px 0;
     height: 45px;
     width: 200px;
     background: var(--accent, #4985FF);
@@ -480,27 +526,74 @@ body {
   }
   
   .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #F6F6F8;
     padding: 30px 0;
     text-align: center;
+
   }
   
-  .footer__column {
+  .footer__column-wrapper {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 1097px; */
+  }
+
+  .footer__column {
+    color: var(--grey, #999);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%; /* 22.186px */
   }
   
   .footer__column-title {
-    font-size: 20px;
-    margin: 0;
-    padding: 10px 0;
+    color: #000;
+
+    /* h3 */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .footer__separator {
+    width: 1110px;
+    height: 1px;
+    background: #E0E0E0;
   }
   
-  .footer__column-item {
+  .footer__column-item__link {
     margin: 5px 0;
+    display: block;
+    color: var(--grey, #999);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%; /* 22.186px */
+    text-decoration: none;
+  }
+
+  .footer__column-item__link::before {
+    content: url('./img/assets/project.svg');
+    margin-right: 5px; 
+  }
+
+  .footer__copyright {
+    width: 386px;
+    margin-left: 767px;
+    height: 15px;
+    flex-shrink: 0;
+    color: var(--grey, #999);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%; /* 20.601px */
   }
   
   

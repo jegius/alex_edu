@@ -122,25 +122,25 @@
   </section>
 
   <section class="our-works">
-    <h2 class="our-works__title">Наши работы, на которых<br>мы специализируемся</h2>
-    <button class="our-works__button">Посмотреть все работы</button>
+     
+      <div class="our-works__wrapper">
+        <div class="our-works__background"></div>
+          <div class="our-works__container">
+            <h2 class="our-works__title">Наши работы, на которых<br>мы специализируемся</h2>
+            <button class="our-works__button">Посмотреть все работы</button>
+          </div>
+      </div>
     <div class="our-works__gallery">
       <div class="our-works__item">
-        <img src="work.png" alt="Проект 1">
-        <p class="our-works__item-marker">01</p>
-        <p class="our-works__item-caption">Исследование и упаковка</p>
+        <img class="our-works__image" src="./img/assets/works-img.png" alt="Проект 1">
+        <div class="our-works__wrapper">
+          <p class="our-works__item-marker">01</p>
+          <p class="our-works__item-caption">Исследование и упаковка</p>
+        </div>
       </div>
-      <div class="our-works__item">
-        <img src="work.png" alt="Проект 2">
-        <p class="our-works__item-marker">01</p>
-        <p class="our-works__item-caption">Исследование и упаковка</p>
-      </div>
-      <div class="our-works__item">
-        <img src="work.png" alt="Проект 3">
-        <p class="our-works__item-marker">01</p>
-        <p class="our-works__item-caption">Исследование и упаковка</p>
-      </div>
-    </div>
+    </div> 
+  
+
   </section>
 
   <section class="our-projects">
@@ -180,31 +180,39 @@
   </section>
 
   <footer class="footer">
-    <div class="footer__column">
-      <h3 class="footer__column-title">Раздел 1</h3>
-      <p class="footer__column-item">Ссылка 1</p>
-      <p class="footer__column-item">Ссылка 2</p>
-      <p class="footer__column-item">Ссылка 3</p>
+    <div class="footer__column-wrapper">
+      <div class="footer__column">
+        <h3 class="footer__column-title">Контактная информация</h3>
+        <a href="#" class="footer__column-item__link">test@test.ru</a>
+        <a href="#" class="footer__column-item__link">+8 777 555 66 99</a>
+        <a href="#" class="footer__column-item__link">Москва, Бульвар Ленина 33</a>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__column-title">Основные ссылки</h3>
+        <a href="#" class="footer__column-item__link">Главная</a>
+        <a href="#" class="footer__column-item__link">Наши проекты</a>
+        <a href="#" class="footer__column-item__link">Наши улуги</a>
+        <a href="#" class="footer__column-item__link">Контакты</a>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__column-title">Наши проекты</h3>
+        <a href="#" class="footer__column-item__link">РосНано</a>
+        <a href="#" class="footer__column-item__link">Сколково</a>
+        <a href="#" class="footer__column-item__link">Проект "Восток"</a>
+        <a href="#" class="footer__column-item__link">ТЭЦ Калининграда</a>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__column-title">Социальные сети</h3>
+        <a href="#" class="footer__column-item__link">VK.com</a>
+        <a href="#" class="footer__column-item__link">Instagram</a>
+        <a href="#" class="footer__column-item__link">Facebook</a>
+        <a href="#" class="footer__column-item__link">Twitter</a>
+      </div>
     </div>
-    <div class="footer__column">
-      <h3 class="footer__column-title">Раздел 2</h3>
-      <p class="footer__column-item">Ссылка 4</p>
-      <p class="footer__column-item">Ссылка 5</p>
-      <p class="footer__column-item">Ссылка 6</p>
-    </div>
-    <div class="footer__column">
-      <h3 class="footer__column-title">Раздел 3</h3>
-      <p class="footer__column-item">Ссылка 7</p>
-      <p class="footer__column-item">Ссылка 8</p>
-      <p class="footer__column-item">Ссылка 9</p>
-    </div>
-    <div class="footer__column">
-      <h3 class="footer__column-title">Раздел 4</h3>
-      <p class="footer__column-item">Ссылка 10</p>
-      <p class="footer__column-item">Ссылка 11</p>
-      <p class="footer__column-item">Ссылка 12</p>
-    </div>
-    <p class="footer__copyright">(с) 2019. Все права защищены.</p>    
+
+    <hr class="footer__separator">
+
+      <p class="footer__copyright">(с) 2019. Все права защищены.</p>    
   </footer>
 
 
