@@ -9,10 +9,17 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
     <section class="homescreen">
       <nav class="navigation">
+        <div
+          class="navigation__btn"
+          id="nav__btn"
+          state="closed"
+          onclick="onClickToggleMenu()"
+        ></div>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="#" class="navigation__link">Главная</a>
@@ -31,7 +38,6 @@
           </li>
         </ul>
       </nav>
-
       <div class="homescreen__content">
         <h1 class="text homescreen__title">Передовая IT студия</h1>
         <span class="text text-big homescreen__description"
@@ -40,6 +46,7 @@
         <button class="button homescreen__button">Наши проекты</button>
       </div>
     </section>
+    
 
     <section class="services">
       <div class="services__content">
@@ -118,7 +125,7 @@
       </div>
       <button class="button services__button">Все услуги</button>
     </section>
-
+    
     <section class="development-standards">
       <div class="development-standards__content">
         <div class="development-standards__info-container">
@@ -133,12 +140,12 @@
               латинице с начала XVI века.
             </p>
             <a href="#" class="development-standards__link"
-              >Подробнее о компании</a
+            >Подробнее о компании</a
             >
           </div>
           <img
-            class="development-standards__img"
-            src="./img/assets/dev-stands.jpg"
+          class="development-standards__img"
+          src="./img/assets/dev-stands.jpg"
             alt="Стандарты разработки"
           />
         </div>
@@ -150,11 +157,11 @@
               class="development-standards__metric-img"
               src="./img/assets/web-programming.svg"
               alt="Метрика 1"
-            />
+              />
             <span class="development-standards__metric-value">125</span>
           </div>
           <span class="text development-standards__metric-caption"
-            >Our projects</span
+          >Our projects</span
           >
         </div>
         <div class="development-standards__metric">
@@ -167,7 +174,7 @@
             <span class="development-standards__metric-value">125</span>
           </div>
           <span class="text development-standards__metric-caption"
-            >Our projects</span
+          >Our projects</span
           >
         </div>
         <div class="development-standards__metric">
@@ -180,38 +187,38 @@
             <span class="development-standards__metric-value">125</span>
           </div>
           <span class="text development-standards__metric-caption"
-            >Our projects</span
+          >Our projects</span
           >
         </div>
         <div class="development-standards__metric">
           <div class="development-standards__metric-container">
             <img
-              class="development-standards__metric-img"
+            class="development-standards__metric-img"
               src="./img/assets/web-programming.svg"
               alt="Метрика 4"
             />
             <span class="development-standards__metric-value">125</span>
           </div>
           <span class="text development-standards__metric-caption"
-            >Our projects</span
+          >Our projects</span
           >
         </div>
         <div class="development-standards__metric">
           <div class="development-standards__metric-container">
             <img
-              class="development-standards__metric-img"
+            class="development-standards__metric-img"
               src="./img/assets/web-programming.svg"
               alt="Метрика 5"
-            />
-            <span class="development-standards__metric-value">125</span>
-          </div>
+              />
+              <span class="development-standards__metric-value">125</span>
+            </div>
           <span class="text development-standards__metric-caption"
-            >Our projects</span
+          >Our projects</span
           >
         </div>
       </div>
     </section>
-
+    
     <section class="our-works">
       <div class="our-works__wrapper">
         <div class="our-works__container">
@@ -225,15 +232,15 @@
         <div class="our-works__item">
           <a href="#">
             <img
-              class="our-works__image"
+            class="our-works__image"
               src="./img/assets/works-img.png"
               alt="Проект 1"
-            />
-          </a>
+              />
+            </a>
           <h4 class="our-works__item-caption">
             <span class="text text-mid our-works__marker">01.</span>
             <span class="text text-mid our-works__text"
-              >Исследование и упаковка</span
+            >Исследование и упаковка</span
             >
           </h4>
           <p class="text our-works__item-description">
@@ -246,12 +253,12 @@
         <div class="our-works__item">
           <a href="#">
             <img
-              class="our-works__image"
+            class="our-works__image"
               src="./img/assets/works-img.png"
               alt="Проект 1"
-            />
-          </a>
-          <h4 class="our-works__item-caption">
+              />
+            </a>
+            <h4 class="our-works__item-caption">
             <span class="text text-mid our-works__marker">01.</span>
             <span class="text text-mid our-works__text"
               >Исследование и упаковка</span
@@ -312,7 +319,7 @@
 
       <button class="button our-projects__button">Все проекты</button>
     </section>
-
+    
     <section class="video">
       <div class="video__wrapper">
         <div class="video__container">
@@ -335,7 +342,7 @@
     <section class="subscribe">
       <h2 class="text text-mid subscribe__title">Подпишитесь на рассылку</h2>
       <span class="text subscribe__description"
-        >Полезные статьи, акции, новости - получите все это сейчас!</span
+      >Полезные статьи, акции, новости - получите все это сейчас!</span
       >
       <form class="text subscribe__form">
         <input type="email" name="email" placeholder="Ваш e-mail" required />
@@ -344,7 +351,7 @@
         </button>
       </form>
       <span class="text subscribe__disclaimer"
-        >Мы не шлем спам, и передаем никому ваши данные.</span
+      >Мы не шлем спам, и передаем никому ваши данные.</span
       >
     </section>
 
