@@ -16,6 +16,8 @@
   --path__video-img: url("../img/assets/video-bg.png");
   --path__homescreen-img: url("../img/Rectangle.png");
   --path__works-img: url("./img/assets/works-img.png");
+  --path__hamburger-svg: url("../img/assets/icons/menu.svg");
+  --path__cross-svg: url("../img/assets/icons/cross.svg");
 }
 
 body {
@@ -123,17 +125,17 @@ body {
   margin-top: 2.5rem;
   margin-right: 2rem;
   display: none;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
 .navigation__btn[state="closed"] {
-  background-image: url("../img/assets/icons/menu.svg");
+  background-image: var(--path__hamburger-svg);
   transition: background-image 0.3s ease;
 }
 
 .navigation__btn[state="opened"] {
-  background-image: url("../img/assets/icons/cross.svg");
+  background-image: var(--path__cross-svg);
   transition: background-image 0.3s ease;
 }
 
@@ -177,7 +179,7 @@ body {
 }
 
 .navigation__btn.opened {
-  background-image: url("../img/assets/icons/cross.svg");
+  background-image: var(--path__cross-svg);
 }
 
 .services {
@@ -256,8 +258,6 @@ body {
   color: var(--color__gray);
   font-size: 0.875rem;
   max-width: 13.875rem;
-  max-height: 4rem;
-  flex-shrink: 0;
   text-align: left;
 }
 
@@ -304,7 +304,7 @@ body {
   max-width: 30.5625rem;
   max-height: 7.3125rem;
   color: var(--color__gray);
-  text-justify: distribute;
+  display: inline-block;
 }
 
 .development-standards__link {
@@ -463,7 +463,6 @@ body {
   max-height: 2.5625rem;
   padding-top: 3.125rem;
   margin: auto;
-  flex-shrink: 0;
 }
 
 .our-projects__gallery {
@@ -472,7 +471,11 @@ body {
   margin: auto;
   justify-content: space-between;
   max-width: 73.125rem;
-  padding-top: 4.375rem;
+  padding-top: 3.375rem;
+  margin-top: -1.625rem;
+}
+.our-projects__gallery > * {
+  margin-top: 1.625rem;
 }
 
 .our-projects img {
@@ -586,7 +589,7 @@ body {
 
 .subscribe__form input {
   border: none;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   margin: auto;
   max-width: fit-content;
 }
@@ -599,7 +602,7 @@ body {
 
 .subscribe__button {
   min-width: 11.875rem;
-  padding: .625rem 1.25rem;
+  padding: 0.625rem 1.25rem;
   cursor: pointer;
   border-radius: 0 1.875rem 1.875rem 0;
   min-height: 2.8125rem;
@@ -608,7 +611,7 @@ body {
   border: none;
   color: var(--color__white);
   font-family: Montserrat;
-  box-shadow: 0 0 .625rem 0 var(--color__dark);
+  box-shadow: 0 0 0.625rem 0 var(--color__dark);
 }
 
 .footer {
@@ -626,7 +629,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
-  padding-bottom: 2.5rem; 
+  padding-bottom: 2.5rem;
   border-bottom: 0.0625rem solid var(--color__light);
   max-width: 90%;
 }
@@ -670,30 +673,24 @@ body {
   margin: auto;
 }
 
-@media (min-width: 0em) and (max-width: 800px) {
-  .homescreen {
-    height: 100vh;
-  }
-
+@media (min-width: 0) and (max-width: 800px) {
   .homescreen__description {
     max-width: 80%;
   }
 
   .homescreen__content {
-    max-height: 100vh;
     padding: 0;
-    background-size: 100vh;
   }
 
   .navigation {
     flex-direction: column;
-    height: 100vh;
     position: absolute;
+    top: 0;
     justify-content: flex-start;
     align-items: flex-end;
     background: transparent;
-    opacity: 0.8;
-    transition: background 0.3s ease;
+    opacity: .8;
+    transition: background .3s ease;
   }
 
   .navigation__list {
@@ -711,14 +708,14 @@ body {
 
   .navigation__btn {
     display: block;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/assets/icons/menu.svg");
+    width: 3.75rem;
+    height: 3.75rem;
+    background-image: var(--path__hamburger-svg);
     background-size: cover;
   }
 
   .navigation__btn.opened {
-    background-image: url("../img/assets/icons/cross.svg");
+    background-image: var(--path__cross-svg);
   }
 
   .hidden {
@@ -821,10 +818,9 @@ body {
   }
 
   .development-standards__text {
-    text-justify: distribute;
-    max-height: inherit;
+    max-width: 90%;
+    max-height: none;
     margin: auto;
-    flex-shrink: 0;
     padding: 1rem 0;
     text-align: center;
   }
@@ -864,12 +860,12 @@ body {
 
   .our-works {
     background-image: linear-gradient(
-    0deg,
-    var(--color__white) 0%,
-    var(--color__white) 80%,
-    var(--color__violet) 80%,
-    var(--color__purple) 100%
-  );
+      0deg,
+      var(--color__white) 0%,
+      var(--color__white) 80%,
+      var(--color__violet) 80%,
+      var(--color__purple) 100%
+    );
   }
 
   .our-works__item {
@@ -883,15 +879,20 @@ body {
   }
 
   .our-projects__gallery {
-    flex-direction: column; 
-    align-items: center; 
-    padding-top: 2.5rem; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-projects__description {
+    max-width: none;
+    max-height: none;
   }
 
   .our-projects__gallery img {
     max-width: 100%;
-    height: auto;    
-    padding-top: 7rem;
+    height: auto;
+    margin-top: 0.625rem;
+    padding-top: 1rem;
   }
 
   .video {
@@ -934,9 +935,9 @@ body {
   }
 
   .subscribe__form {
-    width: 80%; 
+    width: 80%;
     min-width: 50%;
-    max-width: none; 
+    max-width: none;
     margin: auto;
   }
 
